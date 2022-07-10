@@ -14,10 +14,11 @@ internal class Program
         Console.Write("Generator Seed (leave blank for random): ");
 
         var seed = Console.ReadLine();
+        Console.WriteLine(seed);
 
         if (seed != null)
         {
-            if (seed == "")
+            if (seed != "")
             {
                 random = new Random(seed);
             }
